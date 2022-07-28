@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ms-user
+  cloud:
+    config:
+      uri: https://ms-config-server.herokuapp.com
+      username: config
+      password: s3rv1c3*

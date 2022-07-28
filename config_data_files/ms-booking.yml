@@ -1,0 +1,28 @@
+server:
+    servlet:
+        contextPath: /
+    port: '${PORT:8081}'
+spring:
+    datasource:
+        hikari:
+            maximumPoolSize: 3.0
+        password: 886b94b9577c6b26328914c4dc831cf9989d6c6fa5c9a6345e4770e04ef5fddc
+        url: jdbc:postgresql://ec2-52-72-99-110.compute-1.amazonaws.com:5432/d654nigao4k2gf
+        username: zmsciguiqzsnrl
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true
+springfox:
+    documentation:
+        open-api:
+            v3:
+                path: /api-docs
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8086/eureka/
